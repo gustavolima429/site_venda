@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+.body {
+    margin: 0%;
+}
+
+#header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 20vh;
+    background-color: orangered;
+    border-radius: 10px;
+}
+
+.h2 {
+    color: white;
+
+}
+
+#OpcoesHeader {
+    display: flex;
+    background-color: #ECA427;
+    width: 90vw;
+    border-radius: 10px;
+    height: 10vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.link-elegante {
+    color: #4CAF50;
+    /* Cor verde bonita */
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 4px;
+}
+
+/* Efeito da linha surgindo ao passar o mouse */
+.link-elegante::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #4CAF50;
+    transition: width 0.3s ease-in-out;
+}
+
+.link-elegante:hover::after {
+    width: 100%;
+}
+
+.grupo-input {
+    margin-bottom: 15px;
+}
+
+.grupo-input label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.grupo-input input,
+.grupo-input textarea {
+    width: 100%;
+    background-color: var(--bg-input);
+    border: 1px solid var(--borda);
+    border-radius: 6px;
+    color: var(--texto-claro);
+    padding: 10px;
+    font-size: 0.95rem;
+    outline: none;
+}
+
+.grupo-input textarea {
+    resize: vertical;
+    min-height: 120px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.grupo-input input:focus,
+.grupo-input textarea:focus {
+    border-color: var(--cor-foco);
+    box-shadow: 0 0 0 3px rgba(88, 166, 255, 0.3);
+}
+
+button.btn-salvar {
+    background-color: var(--cor-sucesso);
+    color: #ffffff;
+    border: 1px solid rgba(240, 246, 252, 0.1);
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.2s;
+}
+
+button.btn-salvar:hover {
+    background-color: #2ea44f;
+}
