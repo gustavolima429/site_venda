@@ -20,8 +20,6 @@ const codigosCollection = collection(db, "codigos");
 
 document.getElementById('btn-Salvar').addEventListener('click', salvarCodigo);
 
-carrgarCodigos();
-
 async function salvarCodigo() {
     const tituloInput = document.getElementById('titulo');
     const descricaoInput = document.getElementById('descricao');
