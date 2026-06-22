@@ -27,7 +27,7 @@ async function salvarCodigo() {
     const descricaoInput = document.getElementById('descricao');
     const quantidadeInput = document.getElementById('quantidade');
 
-    if (!tituloInput.value.trim() || !codigoInput.value.trim()) {
+    if (!tituloInput.value.trim() || !quantidadeInput.value.trim()) {
         alert('Preencha o Título e o Código!');
         return;
     }
