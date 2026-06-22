@@ -18,7 +18,7 @@ const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 const codigosCollection = collection(db, "codigos");
 
-document.getElementById('btnSalvar').addEventListener('click', salvarCodigo);
+document.getElementById('btn-Salvar').addEventListener('click', salvarCodigo);
 
 carrgarCodigos();
 
