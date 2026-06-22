@@ -18,8 +18,7 @@ const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 const codigosCollection = collection(db, "codigos");
 
-document.getElementById('btn-Salvar').addEventListener('click', salvarCodigo);
-window.deletarCodigo = deletarCodigo;   
+document.getElementById('btnSalvar').addEventListener('click', salvarCodigo);
 
 async function salvarCodigo() {
     const tituloInput = document.getElementById('titulo');
