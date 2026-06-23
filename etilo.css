@@ -17,7 +17,7 @@
     text-align: center;
     width: 100%;
     height: 20vh;
-    background-color: orangered;
+    /*background-color: orangered;*/
     border-radius: 10px;
 }
 
@@ -28,7 +28,7 @@
 
 #OpcoesHeader {
     display: flex;
-    background-color: #ECA427;
+    /*background-color: #ECA427;*/
     width: 90vw;
     border-radius: 10px;
     height: 10vh;
@@ -65,4 +65,12 @@
     width: 50vw;
     display: flex;
     justify-content: space-between;
+}
+.Opcoes{
+    border: none;
+    border: none;
+    border-top: 2px solid #ccc;
+    width: 100%;
+    margin: 20px auto;
+    color: blanchedalmond;
 }

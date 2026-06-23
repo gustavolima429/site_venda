@@ -55,3 +55,8 @@
 .link-elegante:hover::after {
     width: 100%;
 }
+.divMostra{
+    background-color: #4CAF50;
+    width: 100vw;
+    height: 20vh;
+}

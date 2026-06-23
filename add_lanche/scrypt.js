@@ -18,7 +18,10 @@ const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 const codigosCollection = collection(db, "codigos");
 
+
 document.getElementById('btnSalvar').addEventListener('click', salvarCodigo);
+
+
 
 async function salvarCodigo() {
     const tituloInput = document.getElementById('titulo');
@@ -47,5 +50,5 @@ async function salvarCodigo() {
         console.error("Erro ao salvar: ", error);
         alert("Erro ao salvar na nuvem.");
     }
-    
+
 }
