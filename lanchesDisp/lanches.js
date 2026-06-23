@@ -26,6 +26,8 @@ function escaparHTML(texto) {
         .replace(/'/g, "&#039;");
 }
 
+carregarCodigos();
+
 async function carregarCodigos() {
     const containerLista = document.getElementById('listaCodigos');
     if (!containerLista) return; // Segurança caso a div não exista na tela
@@ -71,4 +73,3 @@ async function carregarCodigos() {
 }
 
 // Executa a função assim que a página abre
-carregarCodigos();
