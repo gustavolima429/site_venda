@@ -54,9 +54,9 @@ async function carregarCodigos() {
 
              //Monta o cartão com os dados reais salvos no banco
              html += `
-                 <div class="Cartao">
-                     <div class="Cartao_Top">
-                         <div class="topo-Cartao">
+                 <div class="Cartao" style="display: flex; background-color: #ECA427; width: 80vw; height: 70vh; align-items: center; justify-content: center;">
+                     <div class="Cartao_Top" style="display: flex; background-color: gray; width: 70vw; height: 60vh; align-items: center;" >
+                         <div class="topo-Cartao" style="background-color: blue">
                              <h3>${escaparHTML(item.titulo)}</h3>
                          </div>
                          <p class="descricao-Cartao">${escaparHTML(item.descricao || 'Sem descrição')}</p>
