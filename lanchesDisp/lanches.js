@@ -54,11 +54,13 @@ async function carregarCodigos() {
             // Monta o cartão com os dados reais salvos no banco
             html += `
                 <div class="Cartao">
-                    <div class="topo-Cartao">
-                        <h3>${escaparHTML(item.titulo)}</h3>
-                    </div>
-                    <p class="descricao-Cartao">${escaparHTML(item.descricao || 'Sem descrição')}</p>
-                    <small>Código/Qtd: ${escaparHTML(item.quantidade)}</small>
+                    <div class="Cartao_Top">
+                        <div class="topo-Cartao">
+                            <h3>${escaparHTML(item.titulo)}</h3>
+                        </div>
+                        <p class="descricao-Cartao">${escaparHTML(item.descricao || 'Sem descrição')}</p>
+                        <small>Quantidade: ${escaparHTML(item.quantidade)}</small>
+                    </div> 
                 </div>
             `;
         });
