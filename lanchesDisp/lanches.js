@@ -52,29 +52,29 @@ async function carregarCodigos() {
         querySnapshot.forEach((doc) => {
             const item = doc.data();
 
-            // Monta o cartão com os dados reais salvos no banco
-            // html += `
-            //     <div class="Cartao">
-            //         <div class="Cartao_Top">
-            //             <div class="topo-Cartao">
-            //                 <h3>${escaparHTML(item.titulo)}</h3>
-            //             </div>
-            //             <p class="descricao-Cartao">${escaparHTML(item.descricao || 'Sem descrição')}</p>
-            //             <small>Quantidade: ${escaparHTML(item.quantidade)}</small>
-            //         </div> 
-            //     </div>
-            //`;
+             //Monta o cartão com os dados reais salvos no banco
+             html += `
+                 <div class="Cartao">
+                     <div class="Cartao_Top">
+                         <div class="topo-Cartao">
+                             <h3>${escaparHTML(item.titulo)}</h3>
+                         </div>
+                         <p class="descricao-Cartao">${escaparHTML(item.descricao || 'Sem descrição')}</p>
+                         <small>Quantidade: ${escaparHTML(item.quantidade)}</small>
+                     </div> 
+                 </div>
+            `;
 
-            function Cartao() {
-                const estiloBotao = {
-                    backgroundColor: 'purple',
-                    color: 'white',
-                    padding: '10px',
-                    borderRadius: '6px'
-                };
+            // function Cartao() {
+            //     const estiloBotao = {
+            //         backgroundColor: 'purple',
+            //         color: 'white',
+            //         padding: '10px',
+            //         borderRadius: '6px'
+            //     };
 
-                return <h3>item.titulo</h3>;
-            }
+            //     return <h3>item.titulo</h3>;
+            // }
             
         });
 
