@@ -46,22 +46,41 @@ async function carregarCodigos() {
         }
 
         let html = '';
+        let css = '**';
 
         // 2. DESCOMENTADO E AJUSTADO: Passa por cada item real do Firebase
         querySnapshot.forEach((doc) => {
             const item = doc.data();
 
             // Monta o cartão com os dados reais salvos no banco
-            html += `
-                <div class="Cartao">
-                    <div class="topo-Cartao">
-                        <h3>${escaparHTML(item.titulo)}</h3>
-                    </div>
-                    <p class="descricao-Cartao">${escaparHTML(item.descricao || 'Sem descrição')}</p>
-                    <small>Código/Qtd: ${escaparHTML(item.quantidade)}</small>
-                </div>
-            `;
+            // html += `
+            //     <div class="Cartao">
+            //         <div class="Cartao_Top">
+            //             <div class="topo-Cartao">
+            //                 <h3>${escaparHTML(item.titulo)}</h3>
+            //             </div>
+            //             <p class="descricao-Cartao">${escaparHTML(item.descricao || 'Sem descrição')}</p>
+            //             <small>Quantidade: ${escaparHTML(item.quantidade)}</small>
+            //         </div> 
+            //     </div>
+            //`;
+
+            function Cartao() {
+                const estiloBotao = {
+                    backgroundColor: 'purple',
+                    color: 'white',
+                    padding: '10px',
+                    borderRadius: '5px'
+                };
+
+                return <h3>item.titulo</h3>;
+            }
+            
         });
+
+        
+
+
 
         // Injeta todas as linhas geradas dentro do container do HTML
         containerLista.innerHTML = html;
