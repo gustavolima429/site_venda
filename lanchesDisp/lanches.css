@@ -65,8 +65,13 @@
 .Cartao {
     display: flex;
     background-color: #ECA427;
-    width: 70vw;
+    width: 80vw;
     height: 70vh;
     align-items: center;
     justify-content: center;
+}
+.Cartao_Top{
+    background-color: gray;
+    width: 70vw;
+    height: 60vh;
 }
