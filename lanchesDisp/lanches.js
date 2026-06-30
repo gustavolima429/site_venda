@@ -70,7 +70,7 @@ async function carregarCodigos() {
                     backgroundColor: 'purple',
                     color: 'white',
                     padding: '10px',
-                    borderRadius: '5px'
+                    borderRadius: '6px'
                 };
 
                 return <h3>item.titulo</h3>;
